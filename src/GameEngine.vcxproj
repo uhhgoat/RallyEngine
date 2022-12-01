@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>RallyEngine</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <ForcedIncludeFiles>$(SolutionDir)src\MemTracker\framework.h</ForcedIncludeFiles>
+      <ForcedUsingFiles>
+      </ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkStatus>
+      </LinkStatus>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalDependencies>xmllite.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\UserCode\Bullet.cpp" />
+    <ClCompile Include="..\UserCode\BulletFactory.cpp" />
+    <ClCompile Include="..\UserCode\EnemyFighter.cpp" />
+    <ClCompile Include="..\UserCode\EnemyTank.cpp" />
+    <ClCompile Include="..\UserCode\Frigate.cpp" />
+    <ClCompile Include="..\UserCode\GameEnd.cpp" />
+    <ClCompile Include="..\UserCode\GameInitialize.cpp" />
+    <ClCompile Include="..\UserCode\GameManager.cpp" />
+    <ClCompile Include="..\UserCode\LoadResources.cpp" />
+    <ClCompile Include="..\UserCode\MainMenuScene.cpp" />
+    <ClCompile Include="..\UserCode\Player2Tank.cpp" />
+    <ClCompile Include="..\UserCode\Player2Turret.cpp" />
+    <ClCompile Include="..\UserCode\PlayerTank.cpp" />
+    <ClCompile Include="..\UserCode\PlayerTurret.cpp" />
+    <ClCompile Include="..\UserCode\Powerup.cpp" />
+    <ClCompile Include="..\UserCode\ProcessCollisionMessage.cpp" />
+    <ClCompile Include="..\UserCode\ProcessGameStateMessage.cpp" />
+    <ClCompile Include="..\UserCode\ProcessInputMessage.cpp" />
+    <ClCompile Include="..\UserCode\ProcessUpdateMessage.cpp" />
+    <ClCompile Include="..\UserCode\Rock.cpp" />
+    <ClCompile Include="..\UserCode\Ruins.cpp" />
+    <ClCompile Include="..\UserCode\SceneFrigate.cpp" />
+    <ClCompile Include="..\UserCode\SceneTankBattle.cpp" />
+    <ClCompile Include="..\UserCode\SpriteTest.cpp" />
+    <ClCompile Include="..\UserCode\TreeTrunk.cpp" />
+    <ClCompile Include="..\UserCode\WorldPlane.cpp" />
+    <ClCompile Include="Alarmable.cpp" />
+    <ClCompile Include="AlarmableManager.cpp" />
+    <ClCompile Include="AlarmDeregistrationCommand.cpp" />
+    <ClCompile Include="AlarmRegistrationCommand.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="Collidable.cpp" />
+    <ClCompile Include="CollidableGroup.cpp" />
+    <ClCompile Include="CollisionDeregistrationCommand.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="CollisionMessage.cpp" />
+    <ClCompile Include="CollisionRegistrationCommand.cpp" />
+    <ClCompile Include="CollisionTestPairCommand.cpp" />
+    <ClCompile Include="CollisionTestSelfCommand.cpp" />
+    <ClCompile Include="CollisionTestTerrainCommand.cpp" />
+    <ClCompile Include="CollisionVolumeAABB.cpp" />
+    <ClCompile Include="CollisionVolumeBoundingBoxBase.cpp" />
+    <ClCompile Include="CollisionVolumeBSphere.cpp" />
+    <ClCompile Include="CollisionVolumeOBB.cpp" />
+    <ClCompile Include="ConnectionCancelMessage.cpp" />
+    <ClCompile Include="DataMessage.cpp" />
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="DrawableManager.cpp" />
+    <ClCompile Include="DrawDeregistrationCommand.cpp" />
+    <ClCompile Include="DrawRegistrationCommand.cpp" />
+    <ClCompile Include="FreezeTime.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectEntryCommand.cpp" />
+    <ClCompile Include="GameObjectExitCommand.cpp" />
+    <ClCompile Include="GameStateMessage.cpp" />
+    <ClCompile Include="ImageManager.cpp" />
+    <ClCompile Include="Inputable.cpp" />
+    <ClCompile Include="InputDeregistrationCommand.cpp" />
+    <ClCompile Include="InputRegistrationCommand.cpp" />
+    <ClCompile Include="KeyboardEventManager.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="M_Assert.cpp" />
+    <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="NetworkMessage.cpp" />
+    <ClCompile Include="ObjectUpdateMessage.cpp" />
+    <ClCompile Include="PlayerInputMessage.cpp" />
+    <ClCompile Include="Rally.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RallyMathTools.cpp" />
+    <ClCompile Include="RallyColors.cpp" />
+    <ClCompile Include="RallySprite.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneChangeCommand.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneRegistrationBroker.cpp" />
+    <ClCompile Include="ScreenLog.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="SingleKeyEventManager.cpp" />
+    <ClCompile Include="SpriteFont.cpp" />
+    <ClCompile Include="SpriteFontManager.cpp" />
+    <ClCompile Include="SpriteString.cpp" />
+    <ClCompile Include="SpriteStringFactory.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TerrainManager.cpp" />
+    <ClCompile Include="TerrainObjectManager.cpp" />
+    <ClCompile Include="TerrainRectangleArea.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="TRAIterator.cpp" />
+    <ClCompile Include="Updatable.cpp" />
+    <ClCompile Include="UpdatableManager.cpp" />
+    <ClCompile Include="UpdateDeregistrationCommand.cpp" />
+    <ClCompile Include="UpdateRegistrationCommand.cpp" />
+    <ClCompile Include="VisualizeAABBCommand.cpp" />
+    <ClCompile Include="VisualizeBSphereCommand.cpp" />
+    <ClCompile Include="VisualizeCommand.cpp" />
+    <ClCompile Include="VisualizeMinMaxCommand.cpp" />
+    <ClCompile Include="VisualizeOBBCommand.cpp" />
+    <ClCompile Include="Visualizer.cpp" />
+    <ClCompile Include="VisualizerFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Desktop\OLD PERFORCE\OLD GAM374\student\mfenyves\Sprint9\dist\AzulCore\include\ModelTools.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="..\UserCode\Bullet.h" />
+    <ClInclude Include="..\UserCode\BulletFactory.h" />
+    <ClInclude Include="..\UserCode\CancelOnlineButton.h" />
+    <ClInclude Include="..\UserCode\EnemyFighter.h" />
+    <ClInclude Include="..\UserCode\EnemyTank.h" />
+    <ClInclude Include="..\UserCode\Frigate.h" />
+    <ClInclude Include="..\UserCode\GameManager.h" />
+    <ClInclude Include="..\UserCode\HostGameButton.h" />
+    <ClInclude Include="..\UserCode\JoinGameButton.h" />
+    <ClInclude Include="..\UserCode\MainMenuScene.h" />
+    <ClInclude Include="..\UserCode\Player2Tank.h" />
+    <ClInclude Include="..\UserCode\Player2Turret.h" />
+    <ClInclude Include="..\UserCode\PlayerTank.h" />
+    <ClInclude Include="..\UserCode\PlayerTurret.h" />
+    <ClInclude Include="..\UserCode\Powerup.h" />
+    <ClInclude Include="..\UserCode\Rock.h" />
+    <ClInclude Include="..\UserCode\Ruins.h" />
+    <ClInclude Include="..\UserCode\SceneFrigate.h" />
+    <ClInclude Include="..\UserCode\SceneTankBattle.h" />
+    <ClInclude Include="..\UserCode\SinglePlayerButton.h" />
+    <ClInclude Include="..\UserCode\SpriteTest.h" />
+    <ClInclude Include="..\UserCode\StartOnlineButton.h" />
+    <ClInclude Include="..\UserCode\Status.h" />
+    <ClInclude Include="..\UserCode\Title.h" />
+    <ClInclude Include="..\UserCode\TreeTrunk.h" />
+    <ClInclude Include="..\UserCode\WorldPlane.h" />
+    <ClInclude Include="Alarmable.h" />
+    <ClInclude Include="AlarmableAttorney.h" />
+    <ClInclude Include="AlarmableManager.h" />
+    <ClInclude Include="AlarmDeregistrationCommand.h" />
+    <ClInclude Include="AlarmGuide.h" />
+    <ClInclude Include="AlarmRegistrationCommand.h" />
+    <ClInclude Include="CameraGuide.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="Collidable.h" />
+    <ClInclude Include="CollidableAttorney.h" />
+    <ClInclude Include="CollidableGroup.h" />
+    <ClInclude Include="CollisionDeregistrationCommand.h" />
+    <ClInclude Include="CollisionDispatch.h" />
+    <ClInclude Include="CollisionDispatchBase.h" />
+    <ClInclude Include="CollisionGuide.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="CollisionMessage.h" />
+    <ClInclude Include="CollisionRegistrationCommand.h" />
+    <ClInclude Include="CollisionTestCommandBase.h" />
+    <ClInclude Include="CollisionTestPairCommand.h" />
+    <ClInclude Include="CollisionTestSelfCommand.h" />
+    <ClInclude Include="CollisionTestTerrainCommand.h" />
+    <ClInclude Include="CollisionVolume.h" />
+    <ClInclude Include="CollisionVolumeAABB.h" />
+    <ClInclude Include="CollisionVolumeBoundingBoxBase.h" />
+    <ClInclude Include="CollisionVolumeBSphere.h" />
+    <ClInclude Include="CollisionVolumeOBB.h" />
+    <ClInclude Include="CommandBase.h" />
+    <ClInclude Include="ConnectionCancelMessage.h" />
+    <ClInclude Include="DataMessage.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="DrawableAttorney.h" />
+    <ClInclude Include="DrawableManager.h" />
+    <ClInclude Include="DrawDeregistrationCommand.h" />
+    <ClInclude Include="DrawRegistrationCommand.h" />
+    <ClInclude Include="EventType.h" />
+    <ClInclude Include="FreezeTime.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectAttorney.h" />
+    <ClInclude Include="GameObjectEntryCommand.h" />
+    <ClInclude Include="GameObjectExitCommand.h" />
+    <ClInclude Include="GameStateMessage.h" />
+    <ClInclude Include="GroupAABBAttorney.h" />
+    <ClInclude Include="Home.h" />
+    <ClInclude Include="ImageManager.h" />
+    <ClInclude Include="Inputable.h" />
+    <ClInclude Include="InputableAttorney.h" />
+    <ClInclude Include="InputDeregistrationCommand.h" />
+    <ClInclude Include="InputGuide.h" />
+    <ClInclude Include="InputRegistrationCommand.h" />
+    <ClInclude Include="KeyboardEventManager.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuGuide.h" />
+    <ClInclude Include="MenuItem.h" />
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="M_Assert.h" />
+    <ClInclude Include="NetworkGuide.h" />
+    <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="NetworkMessage.h" />
+    <ClInclude Include="ObjectUpdateMessage.h" />
+    <ClInclude Include="PlayerInputMessage.h" />
+    <ClInclude Include="Rally.h" />
+    <ClInclude Include="RallyAttorney.h" />
+    <ClInclude Include="RallyColors.h" />
+    <ClInclude Include="RallyMathTools.h" />
+    <ClInclude Include="RallySprite.h" />
+    <ClInclude Include="RegistrationState.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneChangeCommand.h" />
+    <ClInclude Include="SceneChangeCommandBase.h" />
+    <ClInclude Include="SceneChangeGuide.h" />
+    <ClInclude Include="SceneChangeNullCommand.h" />
+    <ClInclude Include="SceneGuide.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneNull.h" />
+    <ClInclude Include="SceneRegistrationBroker.h" />
+    <ClInclude Include="ScreenLog.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="SingleKeyEventManager.h" />
+    <ClInclude Include="SpriteFont.h" />
+    <ClInclude Include="SpriteFontManager.h" />
+    <ClInclude Include="SpriteGuide.h" />
+    <ClInclude Include="SpriteString.h" />
+    <ClInclude Include="SpriteStringFactory.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TerrainAttorney.h" />
+    <ClInclude Include="TerrainGuide.h" />
+    <ClInclude Include="TerrainManager.h" />
+    <ClInclude Include="TerrainObjectManager.h" />
+    <ClInclude Include="TerrainRectangleArea.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="TimeManagerAttorney.h" />
+    <ClInclude Include="TRAIterator.h" />
+    <ClInclude Include="Updatable.h" />
+    <ClInclude Include="UpdatableAttorney.h" />
+    <ClInclude Include="UpdatableManager.h" />
+    <ClInclude Include="UpdateDeregistrationCommand.h" />
+    <ClInclude Include="UpdateRegistrationCommand.h" />
+    <ClInclude Include="VisualizeAABBCommand.h" />
+    <ClInclude Include="VisualizeBSphereCommand.h" />
+    <ClInclude Include="VisualizeCommand.h" />
+    <ClInclude Include="VisualizeMinMaxCommand.h" />
+    <ClInclude Include="VisualizeOBBCommand.h" />
+    <ClInclude Include="Visualizer.h" />
+    <ClInclude Include="VisualizerAttorney.h" />
+    <ClInclude Include="VisualizerFactory.h" />
+    <ClInclude Include="WindowsWrapper.h" />
+    <ClInclude Include="WinSockWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

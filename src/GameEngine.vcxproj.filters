@@ -1,0 +1,1007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Rally.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="M_Assert.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\LoadResources.cpp">
+      <Filter>Application\UserCode\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\GameEnd.cpp">
+      <Filter>Application\UserCode\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\GameInitialize.cpp">
+      <Filter>Application\UserCode\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\SceneFrigate.cpp">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Frigate.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\WorldPlane.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdatableManager.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawableManager.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Updatable.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Alarmable.cpp">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmableManager.cpp">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRegistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDeregistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateRegistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateDeregistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmRegistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmDeregistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRegistrationBroker.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectEntryCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectExitCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Bullet.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\BulletFactory.cpp">
+      <Filter>Application\UserCode\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="Inputable.cpp">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEventManager.cpp">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleKeyEventManager.cpp">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="InputRegistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDeregistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\EnemyTank.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\SceneTankBattle.cpp">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="FreezeTime.cpp">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChangeCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\PlayerTank.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDeregistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionRegistrationCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionTestPairCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionTestSelfCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Collidable.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableGroup.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolumeBSphere.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="RallyMathTools.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualizer.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizeCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="RallyColors.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="RallySprite.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\SpriteTest.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizerFactory.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFont.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteString.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFontManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenLog.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteStringFactory.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\TreeTrunk.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolumeAABB.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizeBSphereCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizeAABBCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolumeOBB.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizeOBBCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionVolumeBoundingBoxBase.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\GameManager.cpp">
+      <Filter>Application\UserCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualizeMinMaxCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Powerup.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainObjectManager.cpp">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainManager.cpp">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionTestTerrainCommand.cpp">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainRectangleArea.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TRAIterator.cpp">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\PlayerTurret.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManager.cpp">
+      <Filter>Application\RallyEngine\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionCancelMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="DataMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStateMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectUpdateMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInputMessage.cpp">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\ProcessCollisionMessage.cpp">
+      <Filter>Application\UserCode\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\ProcessGameStateMessage.cpp">
+      <Filter>Application\UserCode\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\ProcessInputMessage.cpp">
+      <Filter>Application\UserCode\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\ProcessUpdateMessage.cpp">
+      <Filter>Application\UserCode\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Player2Tank.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Application\RallyEngine\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuItem.cpp">
+      <Filter>Application\RallyEngine\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\MainMenuScene.cpp">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Player2Turret.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Rock.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\Ruins.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserCode\EnemyFighter.cpp">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode">
+      <UniqueIdentifier>{f8be8da3-be31-4e59-acaa-eeb529b7c2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine">
+      <UniqueIdentifier>{665acdf0-2789-4785-bef7-7fe52419b077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Engine">
+      <UniqueIdentifier>{bc07ee56-e9e1-4558-8d7c-75dcde1b9c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Resources">
+      <UniqueIdentifier>{ad198d46-c251-4d3e-b856-b86fe7652bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Objects">
+      <UniqueIdentifier>{9d684297-e71a-4b96-84a4-9eb83dd0c8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Scenes">
+      <UniqueIdentifier>{54ec6722-6bf3-4381-b210-f110c3e799a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Objects">
+      <UniqueIdentifier>{1abac1c0-4174-4bd7-8915-7242dda8da7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Engine">
+      <UniqueIdentifier>{cbdb3b29-12a5-4a81-8d31-ccf525a1e4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Commands">
+      <UniqueIdentifier>{d410010c-aab4-4c99-959b-f8af5cd8ff88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Events">
+      <UniqueIdentifier>{05cab9fe-daf7-4382-90b3-be3386a256dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Attorneys">
+      <UniqueIdentifier>{033c5d3b-4e47-4378-a9a9-f7c8243f427a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Factories">
+      <UniqueIdentifier>{0c1d294e-0af8-4228-8298-d7d6a25cba5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Events\Collision Tools">
+      <UniqueIdentifier>{df043365-9b22-41bf-bb52-8a0573ec1ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Doxygen">
+      <UniqueIdentifier>{88f7fca8-a7e6-49dd-9f5e-d581385faacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Network">
+      <UniqueIdentifier>{a1dc4ee0-e0b6-44fc-aeb7-c726bc0a4686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Network\Wrappers">
+      <UniqueIdentifier>{461084ea-3f2c-4300-a565-37562ac16e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Network\Messages">
+      <UniqueIdentifier>{1d6dbd82-81f7-42a4-9039-af5e5cf4fbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Network">
+      <UniqueIdentifier>{6154020b-32aa-4db3-b92b-ec079ae38688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\RallyEngine\Menu">
+      <UniqueIdentifier>{0a8b5c12-00b6-47d4-92c7-e2558c017f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Menu">
+      <UniqueIdentifier>{d52adfa2-9ffa-4d6b-8df7-364da59f0acf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Rally.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="M_Assert.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Updatable.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\SceneFrigate.h">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Frigate.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\WorldPlane.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdatableManager.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableManager.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Alarmable.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmableManager.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandBase.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawRegistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDeregistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateRegistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateDeregistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmRegistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmDeregistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRegistrationBroker.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdatableAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmableAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistrationState.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManagerAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectEntryCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectExitCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Bullet.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\BulletFactory.h">
+      <Filter>Application\UserCode\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputable.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEventManager.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleKeyEventManager.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventType.h">
+      <Filter>Application\RallyEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="InputRegistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDeregistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="InputableAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\EnemyTank.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\SceneTankBattle.h">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="FreezeTime.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="RallyAttorney.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeNullCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeCommandBase.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNull.h">
+      <Filter>Application\RallyEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\PlayerTank.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionRegistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDeregistrationCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestCommandBase.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestPairCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestSelfCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Collidable.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableGroup.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDispatch.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDispatchBase.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolume.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolumeBSphere.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="RallyMathTools.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualizer.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizeCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizerAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="RallyColors.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="RallySprite.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\SpriteTest.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizerFactory.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Desktop\OLD PERFORCE\OLD GAM374\student\mfenyves\Sprint9\dist\AzulCore\include\ModelTools.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFont.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteString.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenLog.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteStringFactory.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\TreeTrunk.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="InputGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolumeAABB.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizeBSphereCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizeAABBCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolumeOBB.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizeOBBCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionVolumeBoundingBoxBase.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\GameManager.h">
+      <Filter>Application\UserCode</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupAABBAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualizeMinMaxCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Powerup.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainObjectManager.h">
+      <Filter>Application\RallyEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainManager.h">
+      <Filter>Application\RallyEngine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionTestTerrainCommand.h">
+      <Filter>Application\RallyEngine\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainRectangleArea.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="TRAIterator.h">
+      <Filter>Application\RallyEngine\Events\Collision Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\PlayerTurret.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager.h">
+      <Filter>Application\RallyEngine\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="WinSockWrapper.h">
+      <Filter>Application\RallyEngine\Network\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWrapper.h">
+      <Filter>Application\RallyEngine\Network\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionCancelMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="DataMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectUpdateMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInputMessage.h">
+      <Filter>Application\RallyEngine\Network\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Player2Tank.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Application\RallyEngine\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItem.h">
+      <Filter>Application\RallyEngine\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Title.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Status.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\StartOnlineButton.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\SinglePlayerButton.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\JoinGameButton.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\HostGameButton.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\CancelOnlineButton.h">
+      <Filter>Application\UserCode\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\MainMenuScene.h">
+      <Filter>Application\UserCode\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Player2Turret.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Rock.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\Ruins.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserCode\EnemyFighter.h">
+      <Filter>Application\UserCode\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuGuide.h">
+      <Filter>Application\RallyEngine\Doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainAttorney.h">
+      <Filter>Application\RallyEngine\Attorneys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

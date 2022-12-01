@@ -1,0 +1,32 @@
+
+****************************************
+
+  MemTrackerLog 
+
+       Aug  6 2020  
+       16:23:28  
+
+****************************************
+
+External Libs: 
+
+Leak(0)  196608 bytes ref:920 
+
+Memory Tracking Stats:
+
+     Application files: 
+                num of leaks: 0 
+          total bytes leaked: 0 
+
+     External Libs: 
+                num of leaks: 1 
+          total bytes leaked: 196608 
+          largest individual: Leak(0) size: 196608 
+
+CRT Debug Stats: 
+
+    0 bytes in 0 Free Blocks 
+    196608 bytes in 1 Normal Blocks 
+    20377 bytes in 67 CRT Blocks 
+    0 bytes in 0 Ignore Blocks 
+    0 bytes in 0 Client Blocks 
